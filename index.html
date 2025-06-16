@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Vincent Delisle</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+    />
+  </head>
+  <body>
+    <div class="cursor-orbit" id="cursor">
+      <div class="satellite"></div>
+    </div>
+    <section id="hero" class="container-section">
+      <div class="container-hero">
+        <div class="container-img-slide">
+          <div class="hero-slide active" id="slide-home">
+            <h1>Vincent Delisle</h1>
+            <h3 class="titre-secondaire">Intégrateur Web & Multimédia</h3>
+            <p>
+              Entre doute et éclairs d’inspiration, je trace mes univers
+              visuels.
+            </p>
+          </div>
+
+          <div class="hero-slide" id="slide-about">
+            <div class="titre-avec-ligne">
+              <h2>À propos</h2>
+              <span class="ligne-verte"></span>
+            </div>
+
+            <p class="texte-about">
+              Finissant en Techniques d’intégration multimédia, je navigue entre
+              code, design et narration visuelle. Mon parcours m’a initié à une
+              variété de médiums — du 2D à la 3D, du montage vidéo à la réalité
+              virtuelle — mais c’est dans le web que j’ai trouvé mon terrain de
+              jeu préféré.
+            </p>
+            <p class="texte-about">
+              J’aime créer des expériences interactives simples, élégantes et
+              bien pensées. Que ce soit pour structurer une interface, animer
+              une idée ou peaufiner une mise en page, je cherche toujours à
+              comprendre ce qui rend une interaction claire et agréable.
+            </p>
+          </div>
+
+          <div class="hero-slide" id="slide-projet">
+            <div class="titre-avec-ligne">
+              <h2>Projets</h2>
+              <span class="ligne-verte"></span>
+            </div>
+            <div class="groupe-projet">
+              <div class="carre-projet" data-cible="web">Web</div>
+              <div class="carre-projet" data-cible="design">
+                Design graphique
+              </div>
+              <div class="carre-projet" data-cible="2d">2D</div>
+              <div class="carre-projet" data-cible="3d">3D</div>
+              <div class="carre-projet" data-cible="autre">Autre</div>
+            </div>
+          </div>
+
+          <div class="hero-slide" id="slide-competence">
+            <div class="titre-avec-ligne">
+              <h2>Compétences</h2>
+              <span class="ligne-verte"></span>
+            </div>
+
+            <div class="rang-principal">
+              <div class="competence-principal" data-label="HTML">
+                <i class="fab fa-html5"></i>
+              </div>
+              <div class="competence-principal" data-label="CSS">
+                <i class="fab fa-css3-alt"></i>
+              </div>
+              <div class="competence-principal" data-label="JavaScript">
+                <i class="fab fa-js"></i>
+              </div>
+              <div class="competence-principal" data-label="Elementor">
+                <i class="fa-brands fa-elementor"></i>
+              </div>
+            </div>
+
+            <div class="rang-secondaire">
+              <div class="competence-secondaire" data-label="WordPress">
+                <i class="fa-brands fa-wordpress"></i>
+              </div>
+              <div class="competence-secondaire" data-label="Sass">
+                <i class="fa-brands fa-sass"></i>
+              </div>
+              <div class="competence-secondaire" data-label="Bootstrap">
+                <i class="fa-brands fa-bootstrap"></i>
+              </div>
+              <div class="competence-secondaire" data-label="Figma">
+                <i class="fab fa-figma"></i>
+              </div>
+              <div
+                class="competence-secondaire"
+                data-label="Adobe After Effects"
+              >
+                <i class="devicon-aftereffects-plain"></i>
+              </div>
+              <div class="competence-secondaire" data-label="Adobe Illustrator">
+                <i class="devicon-illustrator-plain"></i>
+              </div>
+              <div class="competence-secondaire" data-label="Adobe Photoshop">
+                <i class="devicon-photoshop-plain"></i>
+              </div>
+              <div
+                class="competence-secondaire icone-non-trouvable"
+                data-label="Plugdata"
+              >
+                PD
+              </div>
+              <div
+                class="competence-secondaire icone-non-trouvable"
+                data-label="Touchdesigner"
+              >
+                TD
+              </div>
+              <div class="competence-secondaire" data-label="Node.js">
+                <i class="devicon-nodejs-plain"></i>
+              </div>
+              <div class="competence-secondaire" data-label="Autodesk Maya">
+                <i class="devicon-maya-plain"></i>
+              </div>
+              <div class="competence-secondaire" data-label="Unity">
+                <i class="devicon-unity-plain"></i>
+              </div>
+              <div class="competence-secondaire" data-label="Swiper.js">
+                <i class="devicon-swiper-original"></i>
+              </div>
+              <div
+                class="competence-secondaire icone-non-trouvable"
+                data-label="GSAP"
+              >
+                GSAP
+              </div>
+              <div class="competence-secondaire" data-label="Vue.js">
+                <i class="devicon-vuejs-plain"></i>
+              </div>
+              <div class="competence-secondaire" data-label="Vite.js">
+                <i class="devicon-vitejs-plain"></i>
+              </div>
+              <div class="competence-secondaire" data-label="SQL Database">
+                <i class="devicon-azuresqldatabase-plain"></i>
+              </div>
+              <div class="competence-secondaire" data-label="JSON">
+                <i class="devicon-json-plain"></i>
+              </div>
+              <div class="competence-secondaire" data-label="Arduino">
+                <i class="devicon-arduino-plain"></i>
+              </div>
+              <div class="competence-secondaire" data-label="Git">
+                <i class="fa-brands fa-git-alt"></i>
+              </div>
+              <div class="competence-secondaire" data-label="C++">
+                <i class="devicon-cplusplus-plain"></i>
+              </div>
+              <div class="competence-secondaire" data-label="C#">
+                <i class="devicon-csharp-plain"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-slide" id="slide-contact">
+            <h2>Discutons de votre prochain projet</h2>
+            <div class="info-contact">
+              <p>
+                Me contacter:
+                <a href="mailto:vincent.delisle.09@gmail.com"
+                  >Vincent.delisle.09@gmail.com</a
+                >
+              </p>
+
+              <div class="barre-reseaux">
+                <p>Réseaux sociaux:</p>
+                <a href="#" data-target=""
+                  ><i class="fa-brands fa-github icone-reseau"></i
+                ></a>
+                <a
+                  href="www.linkedin.com/in/vincent-delisle-4aba01333"
+                  data-target=""
+                  ><i class="fa-brands fa-linkedin icone-reseau"></i
+                ></a>
+                <a href="#" data-target=""
+                  ><i class="fa-brands fa-instagram icone-reseau"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="hero-illustration">
+            <div class="image-wrapper">
+              <img
+                src="./medias/png/moi-hero.png"
+                alt="Illustration Vincent"
+                class="base-image"
+              />
+              <div class="steam">
+                <svg
+                  id="Layer_2"
+                  data-name="Layer 2"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  viewBox="0 0 78.25 83.88"
+                >
+                  <defs>
+                    <linearGradient
+                      id="linear-gradient"
+                      x1="1073.84"
+                      y1="41.14"
+                      x2="1045.77"
+                      y2="69.52"
+                      gradientTransform="translate(-1051.32)"
+                      gradientUnits="userSpaceOnUse"
+                    >
+                      <stop offset=".14" stop-color="#e6e6e6" />
+                      <stop offset="1" stop-color="#666" />
+                    </linearGradient>
+                    <linearGradient
+                      id="linear-gradient-2"
+                      x1="1108.88"
+                      y1="19.37"
+                      x2="1072.82"
+                      y2="55.82"
+                      xlink:href="#linear-gradient"
+                    />
+                    <linearGradient
+                      id="linear-gradient-3"
+                      x1="1129.6"
+                      y1="48.45"
+                      x2="1105.33"
+                      y2="72.99"
+                      xlink:href="#linear-gradient"
+                    />
+                  </defs>
+                  <g id="steam">
+                    <path
+                      id="steam3"
+                      d="M6.61,81.43c-.62-.14-1.78.15-2.23.69-1.34-2.16-3.69-4.8-4.22-7.41-1.81-8.9,12.36-22.18,16.88-28.8,1.68-4.11,1.52-8.99-.25-13.01l-3.29-6.85c4.97,6.77,9.78,13.38,8.87,22.77-.84,8.77-8.92,15.72-13.4,22.29-2.29,3.35-3.65,5.88-2.36,10.31Z"
+                      fill="url(#linear-gradient)"
+                    />
+                    <path
+                      id="steam2"
+                      d="M37.12,71.12c-.8-.18-2.28.19-2.87.89-1.72-2.78-4.74-6.17-5.42-9.51-2.32-11.43,15.87-28.48,21.68-36.98,2.15-5.28,1.95-11.55-.32-16.71L45.97,0c6.38,8.7,12.56,17.19,11.4,29.25-1.08,11.27-11.46,20.19-17.21,28.62-2.94,4.3-4.69,7.55-3.03,13.25Z"
+                      fill="url(#linear-gradient-2)"
+                    />
+                    <path
+                      id="steam1"
+                      d="M64.52,83.29c-.54-.12-1.54.13-1.93.6-1.15-1.87-3.19-4.15-3.65-6.4-1.56-7.7,10.68-19.17,14.59-24.89,1.45-3.55,1.31-7.77-.21-11.25l-2.84-5.92c4.3,5.85,8.45,11.57,7.67,19.69-.73,7.58-7.71,13.59-11.59,19.27-1.98,2.9-3.16,5.08-2.04,8.92Z"
+                      fill="url(#linear-gradient-3)"
+                    />
+                  </g>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="barre-du-bas">
+          <button class="fleche-gauche" id="prev-slide">
+            <i class="fas fa-chevron-left"></i>
+          </button>
+
+          <div class="barre-icone">
+            <a href="#" data-target="slide-home"><i class="fas fa-home"></i></a>
+            <a href="#" data-target="slide-about"
+              ><i class="fa-solid fa-book"></i
+            ></a>
+            <a href="#" data-target="slide-projet"
+              ><i class="fas fa-briefcase"></i
+            ></a>
+            <a href="#" data-target="slide-competence"
+              ><i class="fa-solid fa-gears"></i
+            ></a>
+            <a href="#" data-target="slide-contact"
+              ><i class="fas fa-envelope"></i
+            ></a>
+          </div>
+
+          <button class="fleche-droite" id="next-slide">
+            <i class="fas fa-chevron-right"></i>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section id="projets" class="container-section">
+      <div class="section-label" id="projet-web">
+        <span class="line"></span>
+        <p class="label-text">Projets Web réalisés en entreprise</p>
+        <span class="line"></span>
+      </div>
+
+      <div class="container-projets">
+        <div class="carte-projet" data-projet="projet_web_1">
+          <img
+            src="./medias/jpg/centre-dappel-saint-jerome-cover.jpg"
+            alt="Projet 1"
+          />
+          <div class="overlay-text">
+            <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+          </div>
+        </div>
+        <div class="carte-projet" data-projet="projet_web_2">
+          <img src="./medias/jpg/sign-xpert-cover.jpg" alt="Projet 2" />
+          <div class="overlay-text">
+            <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+          </div>
+        </div>
+        <div class="carte-projet" data-projet="projet_web_3">
+          <img
+            src="./medias/jpg/signalisation-ahuntsic-cover.jpg"
+            alt="Projet 3"
+          />
+          <div class="overlay-text">
+            <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+          </div>
+        </div>
+        <div class="carte-projet" data-projet="projet_web_4">
+          <img
+            src="./medias/jpg/taille-de-haies-premium-cover.jpg"
+            alt="Projet 4"
+          />
+          <div class="overlay-text">
+            <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="section-label" id="projet-multidisciplinaire">
+        <span class="line"></span>
+        <p class="label-text">Projet multidisciplinaires</p>
+        <span class="line"></span>
+      </div>
+
+      <div class="onglets-projets">
+        <button class="onglet actif" data-target="design">
+          Design graphique
+        </button>
+        <button class="onglet" data-target="2d">2D</button>
+        <button class="onglet" data-target="3d">3D</button>
+        <button class="onglet" data-target="autre">Autre</button>
+      </div>
+
+      <div class="container-projets-multi">
+        <div class="groupe-cartes-multi" id="design">
+          <div class="carte-projet" data-projet="projet_DG_1">
+            <img src="./medias/webp/anonyme-artboard-12.webp" alt="Design 1" />
+            <div class="overlay-text">
+              <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+            </div>
+          </div>
+        </div>
+        <div class="groupe-cartes-multi hidden" id="2d">
+          <div class="carte-projet" data-projet="projet_2D_1">
+            <img src="./medias/png/deuil-thumbnail.png" alt="2D 1" />
+            <div class="overlay-text">
+              <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+            </div>
+          </div>
+          <div class="carte-projet" data-projet="projet_2D_2">
+            <img src="./medias/png/le-labyrinthe-thumbnail.png" alt="2D 2" />
+            <div class="overlay-text">
+              <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+            </div>
+          </div>
+        </div>
+        <div class="groupe-cartes-multi hidden" id="3d">
+          <div class="carte-projet" data-projet="projet_3D_1">
+            <img src="./medias/png/pixar-thumbnail.png" alt="3D 1" />
+            <div class="overlay-text">
+              <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+            </div>
+          </div>
+          <div class="carte-projet" data-projet="projet_3D_2">
+            <img src="./medias/png/onirisme-thumbnail.png" alt="3D 2" />
+            <div class="overlay-text">
+              <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+            </div>
+          </div>
+          <div class="carte-projet" data-projet="projet_3D_3">
+            <img src="./medias/png/the-hunter-thumbnail.png" alt="3D 3" />
+            <div class="overlay-text">
+              <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+            </div>
+          </div>
+        </div>
+        <div class="groupe-cartes-multi hidden" id="autre">
+          <div class="carte-projet" data-projet="projet_autre_1">
+            <img src="./medias/png/prismatica-thumbnail.png" alt="autre 1" />
+            <div class="overlay-text">
+              <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div id="popup-overlay" class="popup-overlay hidden">
+      <div class="popup-content">
+        <button class="popup-close">&times;</button>
+        <div id="popup-inner-content"></div>
+      </div>
+    </div>
+
+    <footer>
+      <p>&copy;2025 - Vincent Delisle. Tous droits réservés.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
