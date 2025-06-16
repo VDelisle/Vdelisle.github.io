@@ -1117,6 +1117,24 @@ a:hover .icone-reseau {
     width: 225px;
     height: 150px;
   }
+
+  .popup-infos {
+    flex-direction: column;
+  }
+
+  .info-text {
+    font-size: 14px;
+    line-height: 22px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    width: 100%;
+  }
+
+  .info-projet {
+    font-size: 14px;
+    min-width: 0;
+    width: 100%;
+  }
 }
 
 @media (max-width: 550px) {
