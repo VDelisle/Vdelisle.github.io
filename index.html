@@ -27,8 +27,7 @@
             <h1>Vincent Delisle</h1>
             <h3 class="titre-secondaire">Intégrateur Web & Multimédia</h3>
             <p>
-              Entre doute et éclairs d’inspiration, je trace mes univers
-              visuels.
+              "Je crée des univers numériques... dès que le café fait effet."
             </p>
           </div>
 
@@ -59,13 +58,15 @@
               <span class="ligne-verte"></span>
             </div>
             <div class="groupe-projet">
-              <div class="carre-projet" data-cible="web">Web</div>
-              <div class="carre-projet" data-cible="design">
+              <div class="carre-projet curseur-hover" data-cible="web">Web</div>
+              <div class="carre-projet curseur-hover" data-cible="design">
                 Design graphique
               </div>
-              <div class="carre-projet" data-cible="2d">2D</div>
-              <div class="carre-projet" data-cible="3d">3D</div>
-              <div class="carre-projet" data-cible="autre">Autre</div>
+              <div class="carre-projet curseur-hover" data-cible="2d">2D</div>
+              <div class="carre-projet curseur-hover" data-cible="3d">3D</div>
+              <div class="carre-projet curseur-hover" data-cible="autre">
+                Autre
+              </div>
             </div>
           </div>
 
@@ -75,7 +76,7 @@
               <span class="ligne-verte"></span>
             </div>
 
-            <div class="rang-principal">
+            <div class="rang-principal curseur-hover">
               <div class="competence-principal" data-label="HTML">
                 <i class="fab fa-html5"></i>
               </div>
@@ -177,7 +178,9 @@
             <div class="info-contact">
               <p>
                 Me contacter:
-                <a href="mailto:vincent.delisle.09@gmail.com"
+                <a
+                  class="curseur-hover"
+                  href="mailto:vincent.delisle.09@gmail.com"
                   >Vincent.delisle.09@gmail.com</a
                 >
               </p>
@@ -185,15 +188,19 @@
               <div class="barre-reseaux">
                 <p>Réseaux sociaux:</p>
                 <a href="#" data-target=""
-                  ><i class="fa-brands fa-github icone-reseau"></i
+                  ><i class="fa-brands fa-github icone-reseau curseur-hover"></i
                 ></a>
                 <a
                   href="www.linkedin.com/in/vincent-delisle-4aba01333"
                   data-target=""
-                  ><i class="fa-brands fa-linkedin icone-reseau"></i
+                  ><i
+                    class="fa-brands fa-linkedin icone-reseau curseur-hover"
+                  ></i
                 ></a>
                 <a href="#" data-target=""
-                  ><i class="fa-brands fa-instagram icone-reseau"></i
+                  ><i
+                    class="fa-brands fa-instagram icone-reseau curseur-hover"
+                  ></i
                 ></a>
               </div>
             </div>
@@ -267,27 +274,29 @@
         </div>
 
         <div class="barre-du-bas">
-          <button class="fleche-gauche" id="prev-slide">
+          <button class="fleche-gauche curseur-hover" id="prev-slide">
             <i class="fas fa-chevron-left"></i>
           </button>
 
           <div class="barre-icone">
-            <a href="#" data-target="slide-home"><i class="fas fa-home"></i></a>
+            <a href="#" data-target="slide-home"
+              ><i class="fas fa-home curseur-hover"></i
+            ></a>
             <a href="#" data-target="slide-about"
-              ><i class="fa-solid fa-book"></i
+              ><i class="fa-solid fa-book curseur-hover"></i
             ></a>
             <a href="#" data-target="slide-projet"
-              ><i class="fas fa-briefcase"></i
+              ><i class="fas fa-briefcase curseur-hover"></i
             ></a>
             <a href="#" data-target="slide-competence"
-              ><i class="fa-solid fa-gears"></i
+              ><i class="fa-solid fa-gear curseur-hovers"></i
             ></a>
             <a href="#" data-target="slide-contact"
-              ><i class="fas fa-envelope"></i
+              ><i class="fas fa-envelope curseur-hover"></i
             ></a>
           </div>
 
-          <button class="fleche-droite" id="next-slide">
+          <button class="fleche-droite curseur-hover" id="next-slide">
             <i class="fas fa-chevron-right"></i>
           </button>
         </div>
@@ -302,7 +311,7 @@
       </div>
 
       <div class="container-projets">
-        <div class="carte-projet" data-projet="projet_web_1">
+        <div class="carte-projet curseur-hover" data-projet="projet_web_1">
           <img
             src="./medias/jpg/centre-dappel-saint-jerome-cover.jpg"
             alt="Projet 1"
@@ -311,13 +320,13 @@
             <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
           </div>
         </div>
-        <div class="carte-projet" data-projet="projet_web_2">
+        <div class="carte-projet curseur-hover" data-projet="projet_web_2">
           <img src="./medias/jpg/sign-xpert-cover.jpg" alt="Projet 2" />
           <div class="overlay-text">
             <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
           </div>
         </div>
-        <div class="carte-projet" data-projet="projet_web_3">
+        <div class="carte-projet curseur-hover" data-projet="projet_web_3">
           <img
             src="./medias/jpg/signalisation-ahuntsic-cover.jpg"
             alt="Projet 3"
@@ -326,7 +335,7 @@
             <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
           </div>
         </div>
-        <div class="carte-projet" data-projet="projet_web_4">
+        <div class="carte-projet curseur-hover" data-projet="projet_web_4">
           <img
             src="./medias/jpg/taille-de-haies-premium-cover.jpg"
             alt="Projet 4"
@@ -344,17 +353,17 @@
       </div>
 
       <div class="onglets-projets">
-        <button class="onglet actif" data-target="design">
+        <button class="onglet actif curseur-hover" data-target="design">
           Design graphique
         </button>
-        <button class="onglet" data-target="2d">2D</button>
-        <button class="onglet" data-target="3d">3D</button>
-        <button class="onglet" data-target="autre">Autre</button>
+        <button class="onglet curseur-hover" data-target="2d">2D</button>
+        <button class="onglet curseur-hover" data-target="3d">3D</button>
+        <button class="onglet curseur-hover" data-target="autre">Autre</button>
       </div>
 
       <div class="container-projets-multi">
         <div class="groupe-cartes-multi" id="design">
-          <div class="carte-projet" data-projet="projet_DG_1">
+          <div class="carte-projet curseur-hover" data-projet="projet_DG_1">
             <img src="./medias/webp/anonyme-artboard-12.webp" alt="Design 1" />
             <div class="overlay-text">
               <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
@@ -362,13 +371,13 @@
           </div>
         </div>
         <div class="groupe-cartes-multi hidden" id="2d">
-          <div class="carte-projet" data-projet="projet_2D_1">
+          <div class="carte-projet curseur-hover" data-projet="projet_2D_1">
             <img src="./medias/png/deuil-thumbnail.png" alt="2D 1" />
             <div class="overlay-text">
               <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
             </div>
           </div>
-          <div class="carte-projet" data-projet="projet_2D_2">
+          <div class="carte-projet curseur-hover" data-projet="projet_2D_2">
             <img src="./medias/png/le-labyrinthe-thumbnail.png" alt="2D 2" />
             <div class="overlay-text">
               <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
@@ -376,19 +385,19 @@
           </div>
         </div>
         <div class="groupe-cartes-multi hidden" id="3d">
-          <div class="carte-projet" data-projet="projet_3D_1">
+          <div class="carte-projet curseur-hover" data-projet="projet_3D_1">
             <img src="./medias/png/pixar-thumbnail.png" alt="3D 1" />
             <div class="overlay-text">
               <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
             </div>
           </div>
-          <div class="carte-projet" data-projet="projet_3D_2">
+          <div class="carte-projet curseur-hover" data-projet="projet_3D_2">
             <img src="./medias/png/onirisme-thumbnail.png" alt="3D 2" />
             <div class="overlay-text">
               <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
             </div>
           </div>
-          <div class="carte-projet" data-projet="projet_3D_3">
+          <div class="carte-projet curseur-hover" data-projet="projet_3D_3">
             <img src="./medias/png/the-hunter-thumbnail.png" alt="3D 3" />
             <div class="overlay-text">
               <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
@@ -396,7 +405,7 @@
           </div>
         </div>
         <div class="groupe-cartes-multi hidden" id="autre">
-          <div class="carte-projet" data-projet="projet_autre_1">
+          <div class="carte-projet curseur-hover" data-projet="projet_autre_1">
             <img src="./medias/png/prismatica-thumbnail.png" alt="autre 1" />
             <div class="overlay-text">
               <i class="fa-solid fa-up-right-and-down-left-from-center"></i>

@@ -6,6 +6,15 @@ document.addEventListener("DOMContentLoaded", function () {
     cursor.style.top = `${e.clientY}px`;
   });
 
+  document.querySelectorAll(".curseur-hover").forEach((el) => {
+    el.addEventListener("mouseenter", () => {
+      cursor.classList.add("hovered");
+    });
+    el.addEventListener("mouseleave", () => {
+      cursor.classList.remove("hovered");
+    });
+  });
+
   document.addEventListener("mousedown", () => {
     cursor.classList.add("clicked");
     setTimeout(() => {
