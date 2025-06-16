@@ -303,8 +303,8 @@ h4 {
 
 .groupe-projet {
   display: grid;
-  grid-template-columns: repeat(3, 150px);
-  grid-template-rows: repeat(2, 100px);
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
   gap: 20px;
   justify-content: start;
 }
@@ -986,7 +986,7 @@ a:hover .icone-reseau {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 510px;
+    width: 90%;
     gap: 20px;
     flex-wrap: wrap;
   }
@@ -1015,6 +1015,9 @@ a:hover .icone-reseau {
   .onglets-projets {
     display: flex;
     width: 80%;
+  }
+  .onglet {
+    width: 20%;
   }
 }
 
@@ -1092,13 +1095,27 @@ a:hover .icone-reseau {
 }
 
 @media (max-width: 768px) {
+  .barre-du-bas {
+    width: 75%;
+    gap: 0.8rem;
+  }
+
+  .barre-icone {
+    padding: 10px 20px;
+    gap: 15px;
+  }
+
+  .barre-icone a {
+    font-size: 18px;
+  }
+
   .hero-illustration {
     width: 80%;
   }
 
   .groupe-cartes-multi .carte-projet {
-    width: 250px;
-    height: 175px;
+    width: 225px;
+    height: 150px;
   }
 }
 
@@ -1108,7 +1125,7 @@ a:hover .icone-reseau {
   }
 
   .groupe-cartes-multi .carte-projet {
-    width: 200px;
+    width: 175px;
     height: 125px;
   }
 
@@ -1116,6 +1133,10 @@ a:hover .icone-reseau {
     width: 90px;
     height: 50px;
     font-size: 13px;
+  }
+
+  .onglet {
+    font-size: 12px;
   }
 }
 
@@ -1127,5 +1148,8 @@ a:hover .icone-reseau {
   .groupe-cartes-multi .carte-projet {
     width: 180px;
     height: 100px;
+  }
+  .onglet {
+    font-size: 10px;
   }
 }
