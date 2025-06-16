@@ -33,6 +33,7 @@ body {
   text-align: center;
   background-color: var(--bg);
   margin: 0;
+  font-size: 16px;
 }
 
 .cursor-orbit {
@@ -500,13 +501,18 @@ h4 {
   margin: 0;
 }
 
+.barre-reseaux a {
+  color: white;
+  margin: 0;
+}
+
 .icone-reseau {
-  font-size: 25px;
+  font-size: 20px;
   color: white;
   background-color: #333;
   border-radius: 50%;
-  width: 55px;
-  height: 55px;
+  width: 50px;
+  height: 50px;
   padding: 15px;
   transition: all 0.3s ease;
   box-shadow: 0 0 0 rgba(255, 255, 255, 0);
@@ -636,7 +642,7 @@ a:hover .icone-reseau {
   margin-bottom: 20px;
   width: 25%;
   max-height: 50px;
-  font-size: 18px;
+  font-size: 17px;
   font-family: "Galmine";
   font-family: "";
   cursor: pointer;
@@ -668,6 +674,7 @@ a:hover .icone-reseau {
   transition: transform 0.3s ease;
   cursor: pointer;
   border: 2px solid #555;
+  border-radius: 8px;
 }
 
 .carte-projet img {
@@ -690,9 +697,15 @@ a:hover .icone-reseau {
 }
 
 .groupe-cartes-multi .carte-projet {
-  min-width: 40%;
+  width: 25%;
+  aspect-ratio: 4 / 3;
   position: relative;
-  flex: 2;
+  flex: none;
+  border-radius: 8px;
+}
+
+.groupe-cartes-multi .carte-projet.unique {
+  width: 45%;
 }
 
 .groupe-cartes-multi .carte-projet img {
@@ -804,7 +817,8 @@ a:hover .icone-reseau {
 .info-text {
   flex: 2;
   min-width: 0;
-  font-size: 14px;
+  font-size: 16px;
+  font-weight: normal;
   line-height: 22px;
   word-wrap: break-word;
   overflow-wrap: break-word;
@@ -900,16 +914,7 @@ a:hover .icone-reseau {
       transparent 98%,
       transparent
     );
-  }
-
-  .groupe-cartes-multi {
-    width: 100%;
-  }
-  .carte-projet {
-    width: 100%;
-
-    position: relative;
-    overflow: hidden;
+    font-size: 15px;
   }
 
   .cursor-orbit {
@@ -921,13 +926,6 @@ a:hover .icone-reseau {
     padding: 25px;
   }
 
-  .container-img-slide {
-    flex-direction: column-reverse;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 20px;
-  }
-
   .hero-illustration {
     width: 60%;
   }
@@ -936,7 +934,6 @@ a:hover .icone-reseau {
     width: 100%;
     height: 60%;
     text-align: center;
-    font-size: 15px;
   }
 
   .hero-slide h1 {
@@ -969,7 +966,7 @@ a:hover .icone-reseau {
 
   #slide-competence {
     align-items: center;
-    width: 100%;
+    width: 90%;
   }
 
   .rang-secondaire {
@@ -1018,16 +1015,30 @@ a:hover .icone-reseau {
   .onglet {
     width: 20%;
   }
+
+  .container-img-slide {
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 20px;
+    width: 90%;
+    margin-top: 20px;
+    min-height: 50vh;
+  }
 }
 
 @media (max-width: 1024px) {
   .container-projets {
     grid-template-columns: repeat(2, 1fr);
   }
-  .container-img-slide {
-    flex-direction: column-reverse;
-    align-items: center;
-    justify-content: space-between;
+
+  .groupe-cartes-multi .carte-projet {
+    width: 45%;
+    aspect-ratio: 4 / 3;
+    overflow: hidden;
+    position: relative;
+    flex: none;
+    border-radius: 8px;
   }
 
   .onglets-projets {
@@ -1062,7 +1073,6 @@ a:hover .icone-reseau {
 
   .container-hero {
     width: 100%;
-    min-height: 90vh;
     font-size: 15px;
   }
 
@@ -1094,6 +1104,17 @@ a:hover .icone-reseau {
 }
 
 @media (max-width: 768px) {
+  p {
+    font-size: 14px;
+  }
+
+  .icone-reseau {
+    font-size: 20px;
+    width: 45px;
+    height: 45px;
+    padding: 13px;
+  }
+
   .barre-du-bas {
     width: 75%;
     gap: 0.8rem;
@@ -1112,31 +1133,39 @@ a:hover .icone-reseau {
     width: 80%;
   }
 
-  .groupe-cartes-multi .carte-projet {
-    max-width: 50%;
-    height: auto;
-  }
-
   .popup-infos {
     flex-direction: column;
   }
 
   .info-text {
-    font-size: 14px;
-    line-height: 22px;
-    word-wrap: break-word;
-    overflow-wrap: break-word;
+    font-size: 16px;
     width: 100%;
   }
 
   .info-projet {
-    font-size: 14px;
+    font-size: 16px;
     min-width: 0;
     width: 100%;
   }
 
   footer {
-    font-size: 14px;
+    font-size: 13px;
+  }
+
+  .competence-principal {
+    width: 40px;
+    height: 40px;
+    font-size: 25px;
+  }
+
+  .competence-secondaire {
+    width: 30px;
+    height: 30px;
+    font-size: 17px;
+  }
+
+  .icone-non-trouvable {
+    font-size: 10px;
   }
 
   .onglet {
@@ -1149,11 +1178,11 @@ a:hover .icone-reseau {
 }
 
 @media (max-width: 550px) {
+  p {
+    font-size: 15px;
+  }
   .hero-illustration {
     width: 90%;
-  }
-
-  .groupe-cartes-multi .carte-projet {
   }
 
   .carre-projet {
@@ -1166,6 +1195,10 @@ a:hover .icone-reseau {
     font-size: 12px;
     text-align: center;
   }
+
+  .info-text {
+    font-size: 15px;
+  }
 }
 
 @media (max-width: 450px) {
@@ -1173,10 +1206,6 @@ a:hover .icone-reseau {
     width: 90%;
   }
 
-  .groupe-cartes-multi .carte-projet {
-    width: 180px;
-    height: 100px;
-  }
   .onglet {
     font-size: 10px;
   }
