@@ -132,7 +132,7 @@ document.addEventListener("DOMContentLoaded", function () {
       <span class="ligne-verte-popup"></span>
       <div class="popup-infos">
         <p class="info-text">
-          Développement d’un site vitrine pour une entreprise spécialisée en signalisation routière. J’ai conçu une interface claire mettant en valeur les services techniques et les produits offerts. L’organisation des pages, le choix des visuels et l’intégration mobile ont été entièrement réalisés sur mesure dans Elementor. Le design visait à inspirer confiance et professionnalisme.
+          Développement d’un site vitrine pour une entreprise spécialisée en signalisation routière. J’ai conçu une interface claire mettant en valeur les services techniques et les produits offerts. L’organisation des pages, le choix des visuels et l’intégration mobile ont été entièrement réalisés sur mesure dans Elementor. Le design visait à inspirer confiance et professionnalisme. J'ai aussi intégré une page 404 personnalisée pour l'entreprise.
         </p>
         <div class="info-projet">
           <p><span class="mini-titre">Date: </span>Avril, 2025</p>

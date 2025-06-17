@@ -28,6 +28,11 @@
   cursor: none;
 }
 
+html,
+body {
+  overflow-x: hidden;
+}
+
 body {
   font-family: "Galmine";
   text-align: center;
@@ -490,20 +495,28 @@ h4 {
   gap: 15px;
 }
 
+.barre-icone-reseau {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+.barre-icone-reseau p {
+  color: white;
+  margin: 0;
+}
+
+.barre-icone-reseau a {
+  color: white;
+  margin: 0;
+}
+
 .info-contact {
   border-radius: 10px;
   width: fit-content;
   padding: 10px 10px;
-}
-
-.barre-reseaux p {
-  color: white;
-  margin: 0;
-}
-
-.barre-reseaux a {
-  color: white;
-  margin: 0;
 }
 
 .icone-reseau {
