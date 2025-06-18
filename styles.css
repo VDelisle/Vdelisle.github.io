@@ -112,6 +112,13 @@ footer {
   width: 100%;
 }
 
+a,
+button,
+[role="button"],
+input[type="submit"],
+input[type="button"] {
+  cursor: none;
+}
 /*
 -------------------------------------------------------------
 -----------------------SECTION HERO--------------------------
@@ -331,7 +338,6 @@ h4 {
   position: relative;
   text-align: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
-  cursor: pointer;
   overflow: hidden;
 }
 
@@ -380,7 +386,6 @@ h4 {
   display: flex;
   align-items: center;
   justify-content: center;
-  cursor: pointer;
 }
 
 .competence-principal::before {
@@ -435,7 +440,6 @@ h4 {
   display: flex;
   align-items: center;
   justify-content: center;
-  cursor: pointer;
 }
 
 .competence-secondaire::before {
@@ -591,7 +595,6 @@ a:hover .icone-reseau {
   border: none;
   color: white;
   font-size: 1.5rem;
-  cursor: pointer;
   transition: transform 0.2s;
 }
 
@@ -658,7 +661,6 @@ a:hover .icone-reseau {
   font-size: 17px;
   font-family: "Galmine";
   font-family: "";
-  cursor: pointer;
   color: #e0e0e0;
   background: linear-gradient(to bottom right, #3a3a3a, #1e1e1e);
   border: 1px solid #555;
@@ -685,7 +687,6 @@ a:hover .icone-reseau {
   position: relative;
   overflow: hidden;
   transition: transform 0.3s ease;
-  cursor: pointer;
   border: 2px solid #555;
   border-radius: 8px;
 }
@@ -886,7 +887,6 @@ a:hover .icone-reseau {
   color: white;
   border: none;
   font-size: 50px;
-  cursor: pointer;
 }
 .popup-close:hover {
   transform: translateY(-2px) scale(1.02);
