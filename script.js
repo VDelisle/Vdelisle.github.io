@@ -178,7 +178,7 @@ document.addEventListener("DOMContentLoaded", function () {
   `,
     projet_web_4: `
     <div class="container-popup-text">
-      <h3 class="popup-titre">Taille de Haie Premium</h3>
+      <h3 class="popup-titre">Taille de Haies Premium</h3>
       <span class="ligne-verte-popup"></span>
       <div class="popup-infos">
         <p class="info-text">
