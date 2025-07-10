@@ -138,7 +138,7 @@ document.addEventListener("DOMContentLoaded", function () {
           <p><span class="mini-titre">Date: </span>Avril, 2025</p>
           <p><span class="mini-titre">Rôle: </span>Intégrateur web & designer UI</p>
           <p><span class="mini-titre">Compétences: </span>Wordpress, Elementor pro, Html, Css, Javascript</p>
-          <p><span class="mini-titre">URL: </span>Bientôt disponible !</p>
+          <p><span class="mini-titre">URL: </span><a href="https://sign-xpert.ca" target="_blank">https://sign-xpert.ca</a></p>
         </div>
       </div>
     </div>
@@ -188,7 +188,7 @@ document.addEventListener("DOMContentLoaded", function () {
           <p><span class="mini-titre">Date: </span>Mai, 2025</p>
           <p><span class="mini-titre">Rôle: </span>Intégrateur web & designer UI</p>
           <p><span class="mini-titre">Compétences: </span>Wordpress, Elementor pro, Html, Css, Javascript</p>
-          <p><span class="mini-titre">URL: </span>Bientôt disponible !</p>
+          <p><span class="mini-titre">URL: </span><a href="https://taillehaiejoliette.ca" target="_blank">https://taillehaiejoliette.ca</a></p>
         </div>
       </div>
     </div>
