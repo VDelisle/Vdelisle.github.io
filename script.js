@@ -282,34 +282,6 @@ document.addEventListener("DOMContentLoaded", function () {
       </video>
     </div>
   `,
-    projet_3D_1: `
-    <div class="container-popup-text">
-      <h3 class="popup-titre">Pixar</h3>
-      <span class="ligne-verte-popup"></span>
-      <div class="popup-infos">
-        <p class="info-text">
-          Dans ce projet, j’ai revisité la célèbre animation d’introduction de Pixar en y ajoutant ma touche personnelle. Tout a été modélisé, texturé, éclairé et animé dans Autodesk Maya, de la lampe emblématique jusqu'aux éléments personnalisés qui remplacent ou réinterprètent les originaux. Ce projet m’a permis de perfectionner mes compétences en animation 3D, en rigging et en mise en scène, tout en rendant hommage à une référence iconique du monde de l’animation.
-        </p>
-        <div class="info-projet">
-          <p><span class="mini-titre">Date: </span>Décembre, 2023</p>
-          <p><span class="mini-titre">Rôle: </span>- Modélisation 3D et animation</p>
-          <p><span class="mini-titre">Compétences: </span>Autodesk Maya</p>
-        </div>
-      </div>
-    </div>
-    <div class="container-popup-images">
-      <video
-        loading="lazy"
-        preload="none"
-        class="video-projet"
-        controls
-        preload="none"
-        poster="./medias/png/pixar-thumbnail.png"
-      >
-        <source src="./medias/videos/mp4/remake-pixar.mp4" type="video/mp4" />
-      </video>
-    </div>
-  `,
     projet_3D_2: `
     <div class="container-popup-text">
       <h3 class="popup-titre">Onirisme</h3>
