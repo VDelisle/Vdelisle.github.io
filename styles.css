@@ -734,9 +734,8 @@ a:hover .icone-reseau {
 
 .carte-projet {
   position: relative;
-  min-width: 150px;
-  max-width: 25%;
-  min-height: 150px;
+  width: 25%;
+  height: 250px;
   background-color: black;
   border-radius: 15px;
   overflow: hidden;
@@ -751,7 +750,7 @@ a:hover .icone-reseau {
 
 .container-projets {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   width: 100%;
   height: 100%;
   justify-content: center;
@@ -769,11 +768,13 @@ a:hover .icone-reseau {
   width: 100%;
   height: 100%;
   transition: transform 0.3s ease, filter 0.3s ease;
+  filter: saturate(0%);
 }
 
 .carte-projet:hover img {
   transform: scale(1.05);
   filter: brightness(0.3);
+  filter: saturate(100%);
 }
 
 .overlay-text {
@@ -1087,10 +1088,11 @@ a:hover .icone-reseau {
 
   .container-projets {
     grid-template-columns: repeat(2, 1fr);
+    flex-wrap: wrap;
   }
 
   .carte-projet {
-    max-width: 45%;
+    width: 45%;
   }
 
   .carte-categorie h3 {
@@ -1154,6 +1156,11 @@ a:hover .icone-reseau {
   .carte-categorie {
     height: 125px;
     gap: 10px;
+  }
+
+  .carte-projet {
+    width: 45%;
+    height: 200px;
   }
 
   .carte-categorie h3 {
@@ -1235,7 +1242,8 @@ a:hover .icone-reseau {
 
 @media (max-width: 550px) {
   .carte-projet {
-    aspect-ratio: 16/9;
+    width: 45%;
+    height: 150px;
   }
 
   .carte-categorie h3 {

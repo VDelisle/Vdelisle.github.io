@@ -336,30 +336,8 @@ document.addEventListener("DOMContentLoaded", function () {
   `,
     projet_video_1: `
     <div class="container-popup-text">
-      <h3 class="popup-titre">The Hunter</h3>
+      <h3 class="popup-titre">À venir!</h3>
       <span class="ligne-verte-popup"></span>
-      <div class="popup-infos">
-        <p class="info-text">
-          The Hunter est un jeu 3D interactif développé avec Unity, dans lequel le joueur incarne un chasseur à tête de mort évoluant dans une carte remplie de mystères. L’objectif est simple mais immersif : trouver et collecter toutes les têtes disséminées à travers l’environnement pour remporter la partie. J’ai assuré l’entièreté de la programmation du gameplay en C#, en plus de concevoir l’éclairage pour renforcer l’atmosphère du jeu. Le projet utilise des ressources 3D intégrées de manière cohérente afin de créer une expérience à la fois intrigante et fluide.
-        </p>
-        <div class="info-projet">
-          <p><span class="mini-titre">Date: </span>Octobre, 2024</p>
-          <p><span class="mini-titre">Rôle: </span>- Modélisation 3D (avec ressources 3D), programmation du jeu.</p>
-          <p><span class="mini-titre">Compétences: </span>Unity, C#</p>
-        </div>
-      </div>
-    </div>
-    <div class="container-popup-images">
-      <video
-        loading="lazy"
-        preload="none"
-        class="video-projet"
-        controls
-        preload="none"
-        poster="./medias/png/the-hunter-thumbnail.png"
-      >
-        <source src="./medias/videos/mp4/the-hunter-vr.mp4" type="video/mp4" />
-      </video>
     </div>
   `,
     projet_autre_1: `
