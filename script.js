@@ -1,4 +1,8 @@
 document.addEventListener("DOMContentLoaded", function () {
+  ////////////////////////////////////////////////
+  ///////////////     Curseur     ///////////////
+  ///////////////////////////////////////////////
+
   const cursor = document.getElementById("cursor");
 
   document.addEventListener("mousemove", (e) => {
@@ -21,6 +25,10 @@ document.addEventListener("DOMContentLoaded", function () {
       cursor.classList.remove("clicked");
     }, 300); // correspond à la durée de l'animation
   });
+
+  //////////////////////////////////////////////////////////
+  ///////////////     Barre d'icone Hero     ///////////////
+  //////////////////////////////////////////////////////////
 
   const links = document.querySelectorAll(".barre-icone a");
   const slides = document.querySelectorAll(".hero-slide");
@@ -74,8 +82,48 @@ document.addEventListener("DOMContentLoaded", function () {
     showSlideByIndex(newIndex);
   });
 
+  /////////////////////////////////////////////////////////////////////////
+  ///////////////     Redirection carré-projet dans le héro   ///////////////
+  ///////////////////////////////////////////////////////////////////////////
+
+  document.querySelectorAll(".carre-projet").forEach((carre) => {
+    carre.addEventListener("click", () => {
+      const cible = carre.dataset.cible;
+
+      // Scroll vers la section des projets
+      const sectionMulti = document.getElementById("projets");
+      sectionMulti.scrollIntoView({ behavior: "smooth" });
+
+      // Activer l'onglet correspondant
+      document.querySelectorAll(".onglet").forEach((onglet) => {
+        onglet.classList.remove("actif");
+      });
+
+      const ongletActif = document.querySelector(
+        `.onglet[data-target="${cible}"]`
+      );
+      if (ongletActif) {
+        ongletActif.classList.add("actif");
+      }
+
+      // Afficher le bon groupe de cartes
+      document
+        .querySelectorAll(".container-projets")
+        .forEach((grp) => grp.classList.add("hidden"));
+
+      const groupeVisible = document.getElementById(cible);
+      if (groupeVisible) {
+        groupeVisible.classList.remove("hidden");
+      }
+    });
+  });
+
+  //////////////////////////////////////////////////////////
+  ///////////////     Visibilité groupes projet   ///////////////
+  //////////////////////////////////////////////////////////
+
   const onglets = document.querySelectorAll(".onglet");
-  const groupes = document.querySelectorAll(".groupe-cartes-multi");
+  const groupes = document.querySelectorAll(".container-projets");
 
   onglets.forEach((btn) => {
     btn.addEventListener("click", () => {
@@ -98,6 +146,10 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     });
   });
+
+  //////////////////////////////////////////////////////////
+  ///////////////     Pop-up Overlay Projets    ///////////////
+  //////////////////////////////////////////////////////////
 
   const cartes = document.querySelectorAll(".carte-projet");
   const popup = document.getElementById("popup-overlay");
@@ -196,7 +248,7 @@ document.addEventListener("DOMContentLoaded", function () {
       <img class="image-popup" src="./medias/webp/taille-de-haies-premium-accueil.webp" alt="Projet 4" />
     </div>
   `,
-    projet_DG_1: `
+    projet_visuel_1: `
     <div class="container-popup-text">
       <h3 class="popup-titre">Anonyme</h3>
       <span class="ligne-verte-popup"></span>
@@ -226,7 +278,7 @@ document.addEventListener("DOMContentLoaded", function () {
       <img class="image-popup" src="./medias/webp/anonyme-artboard-12.webp" alt="Design graphique1" />
     </div>
   `,
-    projet_2D_1: `
+    projet_visuel_2: `
     <div class="container-popup-text">
       <h3 class="popup-titre">Deuil</h3>
       <span class="ligne-verte-popup"></span>
@@ -254,7 +306,7 @@ document.addEventListener("DOMContentLoaded", function () {
       </video>
     </div>
   `,
-    projet_2D_2: `
+    projet_visuel_3: `
     <div class="container-popup-text">
       <h3 class="popup-titre">Le labyrinthe</h3>
       <span class="ligne-verte-popup"></span>
@@ -282,36 +334,7 @@ document.addEventListener("DOMContentLoaded", function () {
       </video>
     </div>
   `,
-    projet_3D_2: `
-    <div class="container-popup-text">
-      <h3 class="popup-titre">Onirisme</h3>
-      <span class="ligne-verte-popup"></span>
-      <div class="popup-infos">
-        <p class="info-text">
-          Onirisme est un projet d’animation 3D expérimentale. Nous avons conçu un univers visuel abstrait et poétique, où les formes, les textures et les mouvements cherchent à évoquer une sensation de rêve éveillé. J’ai contribué à la modélisation 3D, à l’animation ainsi qu’à la direction artistique, en explorant des approches non conventionnelles avec Autodesk Maya pour donner vie à une narration visuelle libre et sensorielle.
-        </p>
-        <div class="info-projet">
-          <p><span class="mini-titre">Date: </span>Mars, 2024</p>
-          <p><span class="mini-titre">Rôle: </span>- Modélisation 3D et animation</p>
-          <p><span class="mini-titre">Compétences: </span>Autodesk Maya</p>
-          <p><span class="mini-titre">En collaboration: </span>Ikrame Rata</p>
-        </div>
-      </div>
-    </div>
-    <div class="container-popup-images">
-      <video
-        loading="lazy"
-        preload="none"
-        class="video-projet"
-        controls
-        preload="none"
-        poster="./medias/png/onirisme-thumbnail.png"
-      >
-        <source src="./medias/videos/mp4/onirisme-animation-3d.mp4" type="video/mp4" />
-      </video>
-    </div>
-  `,
-    projet_3D_3: `
+    projet_video_1: `
     <div class="container-popup-text">
       <h3 class="popup-titre">The Hunter</h3>
       <span class="ligne-verte-popup"></span>
@@ -340,6 +363,35 @@ document.addEventListener("DOMContentLoaded", function () {
     </div>
   `,
     projet_autre_1: `
+    <div class="container-popup-text">
+      <h3 class="popup-titre">Onirisme</h3>
+      <span class="ligne-verte-popup"></span>
+      <div class="popup-infos">
+        <p class="info-text">
+          Onirisme est un projet d’animation 3D expérimentale. Nous avons conçu un univers visuel abstrait et poétique, où les formes, les textures et les mouvements cherchent à évoquer une sensation de rêve éveillé. J’ai contribué à la modélisation 3D, à l’animation ainsi qu’à la direction artistique, en explorant des approches non conventionnelles avec Autodesk Maya pour donner vie à une narration visuelle libre et sensorielle.
+        </p>
+        <div class="info-projet">
+          <p><span class="mini-titre">Date: </span>Mars, 2024</p>
+          <p><span class="mini-titre">Rôle: </span>- Modélisation 3D et animation</p>
+          <p><span class="mini-titre">Compétences: </span>Autodesk Maya</p>
+          <p><span class="mini-titre">En collaboration: </span>Ikrame Rata</p>
+        </div>
+      </div>
+    </div>
+    <div class="container-popup-images">
+      <video
+        loading="lazy"
+        preload="none"
+        class="video-projet"
+        controls
+        preload="none"
+        poster="./medias/png/onirisme-thumbnail.png"
+      >
+        <source src="./medias/videos/mp4/onirisme-animation-3d.mp4" type="video/mp4" />
+      </video>
+    </div>
+  `,
+    projet_autre_2: `
     <div class="container-popup-text">
       <h3 class="popup-titre">Prismatica</h3>
       <span class="ligne-verte-popup"></span>
@@ -397,45 +449,5 @@ document.addEventListener("DOMContentLoaded", function () {
       popupOverlay.classList.add("hidden"); // ou ta fonction de fermeture
     }
     document.body.style.overflow = "auto";
-  });
-
-  document.querySelectorAll(".carre-projet").forEach((carre) => {
-    carre.addEventListener("click", () => {
-      const cible = carre.dataset.cible;
-
-      if (cible === "web") {
-        // Scroll vers la section des projets web
-        const sectionWeb = document.getElementById("projet-web");
-        sectionWeb.scrollIntoView({ behavior: "smooth" });
-      } else {
-        // Scroll vers la section des projets multidisciplinaires
-        const sectionMulti = document.getElementById(
-          "projet-multidisciplinaire"
-        );
-        sectionMulti.scrollIntoView({ behavior: "smooth" });
-
-        // Activer l'onglet correspondant
-        document.querySelectorAll(".onglet").forEach((onglet) => {
-          onglet.classList.remove("actif");
-        });
-
-        const ongletActif = document.querySelector(
-          `.onglet[data-target="${cible}"]`
-        );
-        if (ongletActif) {
-          ongletActif.classList.add("actif");
-        }
-
-        // Afficher le bon groupe de cartes
-        document
-          .querySelectorAll(".groupe-cartes-multi")
-          .forEach((grp) => grp.classList.add("hidden"));
-
-        const groupeVisible = document.getElementById(cible);
-        if (groupeVisible) {
-          groupeVisible.classList.remove("hidden");
-        }
-      }
-    });
   });
 });

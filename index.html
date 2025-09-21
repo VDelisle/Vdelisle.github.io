@@ -5,6 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio Vincent Delisle</title>
     <link rel="icon" href="./medias/webp/favicon-VD.webp" type="favicon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles.css" />
     <link
       rel="stylesheet"
@@ -26,7 +36,9 @@
         <div class="container-img-slide">
           <div class="hero-slide active" id="slide-home">
             <h1>Vincent Delisle</h1>
-            <h3 class="titre-secondaire">Intégrateur Web & Multimédia</h3>
+            <h3 class="titre-secondaire">
+              Concepteur & intégrateur multimédia
+            </h3>
             <p>
               "Je crée des univers numériques... dès que le café fait effet."
             </p>
@@ -39,16 +51,16 @@
             </div>
 
             <p class="texte-about">
-              Finissant en Techniques d’intégration multimédia, je développe des
+              Finissant en Techniques d’intégration multimédia, je crée des
               solutions numériques qui allient esthétique et fonctionnalité, en
-              naviguant entre code, design et narration visuelle. Mon parcours
-              m’a permis d’approfondir le développement web, l’animation et les
-              technologies immersives.
+              naviguant entre design, montage vidéo et intégration web. Mon
+              parcours m’a permis d’explorer le développement web, la création
+              graphique, l’animation et les technologies immersives.
             </p>
             <p class="texte-about">
-              J’aime concevoir des interfaces et des parcours utilisateurs
-              élégants et intuitifs, qu’ils soient destinés au web ou à d’autres
-              environnements numériques.
+              J’aime donner vie à des contenus visuels et des expériences
+              numériques engageantes, qu’il s’agisse de créations graphiques, de
+              vidéos ou d’interfaces interactives.
             </p>
           </div>
 
@@ -58,14 +70,23 @@
               <span class="ligne-verte"></span>
             </div>
             <div class="groupe-projet">
-              <div class="carre-projet curseur-hover" data-cible="web">Web</div>
-              <div class="carre-projet curseur-hover" data-cible="design">
-                Design graphique
+              <div class="carre-projet curseur-hover" data-cible="web">
+                <h4>Web</h4>
               </div>
-              <div class="carre-projet curseur-hover" data-cible="2d">2D</div>
-              <div class="carre-projet curseur-hover" data-cible="3d">3D</div>
+              <div
+                class="carre-projet curseur-hover"
+                data-cible="creation-visuelle"
+              >
+                <h4>Création visuelle</h4>
+              </div>
+              <div
+                class="carre-projet curseur-hover"
+                data-cible="montage-video"
+              >
+                <h4>Montage vidéo</h4>
+              </div>
               <div class="carre-projet curseur-hover" data-cible="autre">
-                Autre
+                <h4>Autre</h4>
               </div>
             </div>
           </div>
@@ -186,7 +207,11 @@
           </div>
 
           <div class="hero-slide" id="slide-contact">
-            <h2>Discutons de votre prochain projet</h2>
+            <div class="titre-avec-ligne">
+              <h2>Pour me contacter</h2>
+              <span class="ligne-verte"></span>
+            </div>
+
             <div class="info-contact">
               <p>
                 Me contacter:
@@ -322,12 +347,78 @@
     <section id="projets" class="container-section">
       <div class="section-label" id="projet-web">
         <span class="line"></span>
-        <p class="label-text">Projets Web réalisés en agence</p>
+        <p class="label-text">Mes projets</p>
         <span class="line"></span>
       </div>
 
-      <div class="container-projets">
-        <div class="carte-projet curseur-hover" data-projet="projet_web_1">
+      <!-- Onglets catégories -->
+
+      <div class="container-onglets onglets-projets">
+        <button
+          class="carte-categorie onglet actif curseur-hover"
+          data-target="creation-visuelle"
+        >
+          <h3>Création visuelle</h3>
+        </button>
+        <button class="carte-categorie onglet curseur-hover" data-target="web">
+          <h3>Conception web</h3>
+        </button>
+        <button
+          class="carte-categorie onglet curseur-hover"
+          data-target="montage-video"
+        >
+          <h3>Montage vidéo</h3>
+        </button>
+        <button
+          class="carte-categorie onglet curseur-hover"
+          data-target="autre"
+        >
+          <h3>Autre</h3>
+        </button>
+      </div>
+
+      <!-------------------------------------->
+      <!-- Groupement des Cartes de projets -->
+      <!-------------------------------------->
+
+      <!-------------------------------------->
+      <!-- Création visuelle -->
+      <!-------------------------------------->
+      <div class="container-projets hidden" id="creation-visuelle">
+        <button
+          class="carte-projet curseur-hover"
+          data-projet="projet_visuel_1"
+        >
+          <img src="./medias/webp/anonyme-artboard-12.webp" alt="Design 1" />
+          <div class="overlay-text">
+            <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+          </div>
+        </button>
+        <button
+          class="carte-projet curseur-hover"
+          data-projet="projet_visuel_2"
+        >
+          <img src="./medias/png/deuil-thumbnail.png" alt="Design 2" />
+          <div class="overlay-text">
+            <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+          </div>
+        </button>
+        <button
+          class="carte-projet curseur-hover"
+          data-projet="projet_visuel_3"
+        >
+          <img src="./medias/png/le-labyrinthe-thumbnail.png" alt="Design 3" />
+          <div class="overlay-text">
+            <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+          </div>
+        </button>
+      </div>
+
+      <!-------------------------------------->
+      <!-- Web -->
+      <!-------------------------------------->
+      <div class="container-projets hidden" id="web">
+        <button class="carte-projet curseur-hover" data-projet="projet_web_1">
           <img
             src="./medias/jpg/centre-dappel-saint-jerome-cover.jpg"
             alt="Projet 1"
@@ -335,14 +426,14 @@
           <div class="overlay-text">
             <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
           </div>
-        </div>
-        <div class="carte-projet curseur-hover" data-projet="projet_web_2">
+        </button>
+        <button class="carte-projet curseur-hover" data-projet="projet_web_2">
           <img src="./medias/jpg/sign-xpert-cover.jpg" alt="Projet 2" />
           <div class="overlay-text">
             <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
           </div>
-        </div>
-        <div class="carte-projet curseur-hover" data-projet="projet_web_3">
+        </button>
+        <button class="carte-projet curseur-hover" data-projet="projet_web_3">
           <img
             src="./medias/jpg/signalisation-ahuntsic-cover.jpg"
             alt="Projet 3"
@@ -350,8 +441,8 @@
           <div class="overlay-text">
             <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
           </div>
-        </div>
-        <div class="carte-projet curseur-hover" data-projet="projet_web_4">
+        </button>
+        <button class="carte-projet curseur-hover" data-projet="projet_web_4">
           <img
             src="./medias/jpg/taille-de-haies-premium-cover.jpg"
             alt="Projet 4"
@@ -359,72 +450,36 @@
           <div class="overlay-text">
             <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
           </div>
-        </div>
-      </div>
-
-      <div class="section-label" id="projet-multidisciplinaire">
-        <span class="line"></span>
-        <p class="label-text">Projet multidisciplinaires</p>
-        <span class="line"></span>
-      </div>
-
-      <div class="onglets-projets">
-        <button class="onglet actif curseur-hover" data-target="design">
-          Design graphique
         </button>
-        <button class="onglet curseur-hover" data-target="2d">2D</button>
-        <button class="onglet curseur-hover" data-target="3d">3D</button>
-        <button class="onglet curseur-hover" data-target="autre">Autre</button>
       </div>
 
-      <div class="container-projets-multi">
-        <div class="groupe-cartes-multi" id="design">
-          <div class="carte-projet curseur-hover" data-projet="projet_DG_1">
-            <img src="./medias/webp/anonyme-artboard-12.webp" alt="Design 1" />
-            <div class="overlay-text">
-              <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
-            </div>
+      <!-------------------------------------->
+      <!-- Montage Vidéo -->
+      <!-------------------------------------->
+      <div class="container-projets hidden" id="montage-video">
+        <button class="carte-projet curseur-hover" data-projet="projet_video_1">
+          <div class="overlay-text">
+            <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
           </div>
-        </div>
-        <div class="groupe-cartes-multi hidden" id="2d">
-          <div class="carte-projet curseur-hover" data-projet="projet_2D_1">
-            <img src="./medias/png/deuil-thumbnail.png" alt="2D 1" />
-            <div class="overlay-text">
-              <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
-            </div>
+        </button>
+      </div>
+
+      <!-------------------------------------->
+      <!-- Autre -->
+      <!-------------------------------------->
+      <div class="container-projets hidden" id="autre">
+        <button class="carte-projet curseur-hover" data-projet="projet_autre_1">
+          <img src="./medias/png/onirisme-thumbnail.png" alt="autre 1" />
+          <div class="overlay-text">
+            <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
           </div>
-          <div class="carte-projet curseur-hover" data-projet="projet_2D_2">
-            <img src="./medias/png/le-labyrinthe-thumbnail.png" alt="2D 2" />
-            <div class="overlay-text">
-              <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
-            </div>
+        </button>
+        <button class="carte-projet curseur-hover" data-projet="projet_autre_2">
+          <img src="./medias/png/prismatica-thumbnail.png" alt="autre 2" />
+          <div class="overlay-text">
+            <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
           </div>
-        </div>
-        <div class="groupe-cartes-multi hidden" id="3d">
-          <div class="carte-projet curseur-hover" data-projet="projet_3D_2">
-            <img src="./medias/png/onirisme-thumbnail.png" alt="3D 2" />
-            <div class="overlay-text">
-              <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
-            </div>
-          </div>
-          <div class="carte-projet curseur-hover" data-projet="projet_3D_3">
-            <img src="./medias/png/the-hunter-thumbnail.png" alt="3D 3" />
-            <div class="overlay-text">
-              <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
-            </div>
-          </div>
-        </div>
-        <div class="groupe-cartes-multi hidden" id="autre">
-          <div
-            class="carte-projet unique curseur-hover"
-            data-projet="projet_autre_1"
-          >
-            <img src="./medias/png/prismatica-thumbnail.png" alt="autre 1" />
-            <div class="overlay-text">
-              <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
-            </div>
-          </div>
-        </div>
+        </button>
       </div>
     </section>
 
