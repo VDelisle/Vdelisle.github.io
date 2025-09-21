@@ -272,7 +272,21 @@ input[type="button"] {
 .hero-slide h3,
 h4 {
   font-size: 30px;
-  color: #1be425;
+
+  background: linear-gradient(
+    -45deg,
+    #003213 0%,
+    #317a00 20%,
+    #66ff33 40%,
+    #265636 60%,
+    #11a600 80%,
+    #b6ff00 100%
+  );
+  background-size: 300% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  animation: greenFlow 8s ease infinite;
   margin: 0;
 }
 
