@@ -335,10 +335,24 @@ document.addEventListener("DOMContentLoaded", function () {
     </div>
   `,
     projet_video_1: `
-    <div class="container-popup-text">
-      <h3 class="popup-titre">À venir!</h3>
-      <span class="ligne-verte-popup"></span>
+<div class="container-popup-text">
+  <h3 class="popup-titre">Hell's Kitchen Shorts</h3>
+  <span class="ligne-verte-popup"></span>
+  <div class="popup-infos">
+    <p class="info-text">
+      Cette playlist regroupe une série de montages humoristiques réalisés à partir de l’émission <em>Hell’s Kitchen</em>. 
+      J’y propose des edits dynamiques et rythmés, pensés pour un format court optimisé pour YouTube Shorts. 
+      Chaque vidéo met en valeur le timing humoristique, le choix précis des extraits et un montage rapide qui capte 
+      immédiatement l’attention. Cette playlist reflète mon approche créative du montage court et viral.
+    </p>
+    <div class="info-projet">
+      <p><span class="mini-titre">Date: </span>2025</p>
+      <p><span class="mini-titre">Rôle: </span>Montage vidéo, direction créative</p>
+      <p><span class="mini-titre">Compétences: </span>Premiere Pro, montage court, storytelling visuel, rythme humoristique</p>
+                <p><span class="mini-titre">URL: </span><a href="https://www.youtube.com/playlist?list=PLa0h2_MqrRxcvs3CiFtiYduF64iUL0_QT" target="_blank">https://www.youtube.com/playlist</a></p>
     </div>
+  </div>
+</div>
   `,
     projet_autre_1: `
     <div class="container-popup-text">
