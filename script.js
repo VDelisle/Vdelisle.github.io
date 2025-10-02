@@ -336,7 +336,7 @@ document.addEventListener("DOMContentLoaded", function () {
   `,
     projet_video_1: `
 <div class="container-popup-text">
-  <h3 class="popup-titre">Hell's Kitchen Shorts</h3>
+  <h3 class="popup-titre">No Way Out</h3>
   <span class="ligne-verte-popup"></span>
   <div class="popup-infos">
     <p class="info-text">
