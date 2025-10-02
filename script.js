@@ -348,7 +348,7 @@ Ce projet explore l’utilisation de séquences générées par IA comme matièr
       <p><span class="mini-titre">Date: </span>2025</p>
       <p><span class="mini-titre">Rôle: </span>Directeur narratif, montage vidéo, étalonnage, direction créative, design sonore</p>
       <p><span class="mini-titre">Compétences: </span>Premiere Pro, étalonnage colorimétrique, sound design, montage narratif, storytelling visuel, intégration d’éléments IA</p>
-                <p><span class="mini-titre">URL: </span><a href="https://youtu.be/5_9VYj-gLXw?si=i_KTIn3boF9SSKhc" target="_blank">https://www.youtube.com/video</a></p>
+                <p><span class="mini-titre">URL: </span><a href="https://youtu.be/-tucYegr4hI" target="_blank">https://www.youtube.com/video</a></p>
     </div>
   </div>
 </div>
