@@ -340,6 +340,25 @@ document.addEventListener("DOMContentLoaded", function () {
   <span class="ligne-verte-popup"></span>
   <div class="popup-infos">
     <p class="info-text">
+Court-métrage de suspense/horreur d’une durée de 90 secondes. Le film raconte l’histoire d’un homme arrivant de nuit dans une ruelle inquiétante avant d’être poursuivi par une silhouette sombre. L’univers visuel est volontairement sombre et pluvieux, renforcé par une colorisation froide et un design sonore immersif qui accentuent la tension dramatique.
+<br><br>
+Ce projet explore l’utilisation de séquences générées par IA comme matière brute, réinterprétée et sublimée par un travail de montage, d’étalonnage et de sound design. L’objectif était de transformer des images générées en une véritable expérience cinématographique courte, avec un rythme maîtrisé et une ambiance pesante.
+    </p>
+    <div class="info-projet">
+      <p><span class="mini-titre">Date: </span>2025</p>
+      <p><span class="mini-titre">Rôle: </span>Directeur narratif, montage vidéo, étalonnage, direction créative, design sonore</p>
+      <p><span class="mini-titre">Compétences: </span>Premiere Pro, étalonnage colorimétrique, sound design, montage narratif, storytelling visuel, intégration d’éléments IA</p>
+                <p><span class="mini-titre">URL: </span><a href="https://youtu.be/5_9VYj-gLXw?si=i_KTIn3boF9SSKhc" target="_blank">https://www.youtube.com/video</a></p>
+    </div>
+  </div>
+</div>
+  `,
+    projet_video_2: `
+<div class="container-popup-text">
+  <h3 class="popup-titre">Hell's Kitchen Shorts</h3>
+  <span class="ligne-verte-popup"></span>
+  <div class="popup-infos">
+    <p class="info-text">
       Cette playlist regroupe une série de montages humoristiques réalisés à partir de l’émission <em>Hell’s Kitchen</em>. 
       J’y propose des edits dynamiques et rythmés, pensés pour un format court optimisé pour YouTube Shorts. 
       Chaque vidéo met en valeur le timing humoristique, le choix précis des extraits et un montage rapide qui capte 

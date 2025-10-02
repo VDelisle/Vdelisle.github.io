@@ -105,6 +105,7 @@ footer {
   color: white;
   padding: 1px;
   margin-bottom: 0;
+  font-size: 15px;
 }
 
 .container-section {
@@ -675,8 +676,8 @@ a:hover .icone-reseau {
 
 /* Texte avec gradient animé dans les verts */
 .carte-categorie h3 {
+  font-family: "Noto Serif", serif;
   font-size: 1.5rem;
-
   text-align: center;
   letter-spacing: 2px;
 
@@ -1110,7 +1111,7 @@ a:hover .icone-reseau {
   }
 
   .carte-categorie h3 {
-    font-size: 30px;
+    font-size: 25px;
   }
 
   .carte-categorie {
@@ -1178,7 +1179,8 @@ a:hover .icone-reseau {
   }
 
   .carte-categorie h3 {
-    font-size: 25px;
+    font-size: 22px;
+    letter-spacing: 0.5px;
   }
 
   .container-projets {
@@ -1233,8 +1235,8 @@ a:hover .icone-reseau {
     width: 100%;
   }
 
-  footer {
-    font-size: 13px;
+  footer p {
+    font-size: 14px;
   }
 
   .competence-principal {
@@ -1284,10 +1286,16 @@ a:hover .icone-reseau {
   .info-text {
     font-size: 15px;
   }
+  footer {
+    font-size: 10px;
+  }
 }
 
 @media (max-width: 450px) {
   .hero-illustration {
     width: 90%;
+  }
+  footer p {
+    font-size: 11px;
   }
 }
