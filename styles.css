@@ -429,6 +429,13 @@ h4 {
   justify-content: center;
 }
 
+.competence-principal svg {
+  width: 66%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
 .competence-principal::before {
   content: "";
   position: absolute;
@@ -847,7 +854,7 @@ a:hover .icone-reseau {
 }
 
 .popup-content {
-  background: rgb(39, 39, 39);
+  background: rgba(15, 15, 15, 0.75);
   width: 750px;
   max-height: 100vh;
   overflow-y: auto;
