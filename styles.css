@@ -890,6 +890,22 @@ a:hover .icone-reseau {
   border-radius: 2px;
 }
 
+.ligne-verte-client {
+  position: relative;
+  width: 200px;
+  height: 3px;
+  background: linear-gradient(to right, green, #1be425);
+  border-radius: 2px;
+}
+
+.client-avec-ligne {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+}
+
 .popup-infos {
   display: flex;
   flex-direction: row;
@@ -906,8 +922,35 @@ a:hover .icone-reseau {
   line-height: 22px;
   word-wrap: break-word;
   overflow-wrap: break-word;
+  flex-direction: column;
 }
 
+.info-text-container {
+  display: flex;
+  flex-direction: column;
+  flex: 2;
+  min-width: 0;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 22px;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+.custom-list {
+  font-size: 13px;
+  padding-left: 20px; /* espace entre la bordure et les puces */
+  margin: 0; /* supprime le margin par défaut du ul */
+}
+
+.custom-list li {
+  margin: 0; /* supprime le margin par défaut du li */
+  padding: 0; /* supprime le padding si nécessaire */
+}
+
+.custom-list li p {
+  margin: 2px 0; /* réduit l’espace vertical entre les p à l’intérieur des li */
+}
 .info-projet {
   font-size: 14px;
   flex: 2;
@@ -981,6 +1024,39 @@ a:hover .icone-reseau {
   transform: scale(1.01);
   box-shadow: 0 0 25px rgba(255, 255, 255, 0.4);
   border-color: rgba(255, 255, 255, 0.6);
+}
+
+.popup-videos {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.client-section {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.client-title {
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.videos-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.videos-row iframe {
+  width: 100%;
+  aspect-ratio: 9 / 16;
+  border: none;
+  border-radius: 12px;
+  background: #000;
 }
 
 .hidden {

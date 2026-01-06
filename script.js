@@ -340,9 +340,9 @@ document.addEventListener("DOMContentLoaded", function () {
   <span class="ligne-verte-popup"></span>
   <div class="popup-infos">
     <p class="info-text">
-Court-métrage de suspense/horreur d’une durée de 90 secondes. Le film raconte l’histoire d’un homme arrivant de nuit dans une ruelle inquiétante avant d’être poursuivi par une silhouette sombre. L’univers visuel est volontairement sombre et pluvieux, renforcé par une colorisation froide et un design sonore immersif qui accentuent la tension dramatique.
-<br><br>
-Ce projet explore l’utilisation de séquences générées par IA comme matière brute, réinterprétée et sublimée par un travail de montage, d’étalonnage et de sound design. L’objectif était de transformer des images générées en une véritable expérience cinématographique courte, avec un rythme maîtrisé et une ambiance pesante.
+      Court-métrage de suspense/horreur d’une durée de 90 secondes. Le film raconte l’histoire d’un homme arrivant de nuit dans une ruelle inquiétante avant d’être poursuivi par une silhouette sombre. L’univers visuel est volontairement sombre et pluvieux, renforcé par une colorisation froide et un design sonore immersif qui accentuent la tension dramatique.
+      <br><br>
+      Ce projet explore l’utilisation de séquences générées par IA comme matière brute, réinterprétée et sublimée par un travail de montage, d’étalonnage et de sound design. L’objectif était de transformer des images générées en une véritable expérience cinématographique courte, avec un rythme maîtrisé et une ambiance pesante.
     </p>
     <div class="info-projet">
       <p><span class="mini-titre">Date: </span>2025</p>
@@ -372,6 +372,104 @@ Ce projet explore l’utilisation de séquences générées par IA comme matièr
     </div>
   </div>
 </div>
+  `,
+    projet_video_3: `
+<div class="container-popup-text">
+  <h3 class="popup-titre">Projets freelance</h3>
+  <span class="ligne-verte-popup"></span>
+  <div class="popup-infos">
+  <div class="info-text-container">
+    <p class="info-text">
+      Voici un aperçu de mes réalisations en tant que monteur vidéo freelance pour LetMeTalk. J’ai travaillé sur plus de 100 vidéos, allant de clips courts de 15 secondes à des contenus de 2 minutes, en prenant en charge l’intégralité du montage: 
+    </p>
+    <ul class="custom-list">
+      <li><p>Visionnage et tri des séquences brutes</p></li>
+      <li><p>Sélection et intégration de B-rolls</p></li>
+      <li><p>Création et intégration d’effets visuels (FX) et de transitions</p></li>
+      <li><p>Intégration de SFX et de musique</p></li>
+      <li><p>Ajout de sous-titres dynamiques</p></li>
+      <li><p>Ajustement du rythme narratif pour maximiser l’engagement</p></li>
+      <li><p>Correction colorimétrique</p></li>
+      <li><p>Équilibrage sonore</p></li>
+    </ul>
+    </div>
+    <br><br>
+    
+    <div class="info-projet">
+      <p><span class="mini-titre">Date: </span>2025</p>
+      <p><span class="mini-titre">Rôle: </span>Monteur vidéo</p>
+      <p><span class="mini-titre">Clients: </span>O’Derma, Idéal TFC, MV Saguenay, Coach Gab, Duraclim</p>
+      <p><span class="mini-titre">Via: </span>LetMeTalk (freelance / pigiste)</p>
+    </div>
+  </div>
+</div>
+
+<div class="popup-videos">
+
+  <!-- Client 1 -->
+
+  <div class="client-section">
+    <div class="client-avec-ligne">
+      <h4 class="client-title">Coach Gab</h4>
+      <span class="ligne-verte-client"></span>
+    </div>
+    <div class="videos-row">
+      <iframe src="https://www.instagram.com/reel/DS5uqxdjVuA/embed" scrolling="no"> loading="lazy" allowfullscreen></iframe>
+      <iframe src="https://www.instagram.com/reel/DSqOFhUgGCe/embed" scrolling="no"> loading="lazy" allowfullscreen></iframe>
+      <iframe src="https://www.instagram.com/reel/DS8R7MCDaNC/embed" scrolling="no"> loading="lazy" allowfullscreen></iframe>
+    </div>
+  </div>
+
+
+
+  <!-- Client 2 -->
+
+
+
+  <!-- Client 3 -->
+
+  <div class="client-section">
+    <div class="client-avec-ligne">
+      <h4 class="client-title">MV Saguenay</h4>
+      <span class="ligne-verte-client"></span>
+    </div>
+    <div class="videos-row">
+      <iframe src="https://www.instagram.com/reel/DSlKNwijHhL/embed" scrolling="no"> loading="lazy" allowfullscreen></iframe>
+      <iframe src="https://www.instagram.com/reel/DSqOEhFDK0N/embed" scrolling="no"> loading="lazy" allowfullscreen></iframe>
+      <iframe src="https://www.instagram.com/reel/DSdWIM5ErH1/embed" scrolling="no"> loading="lazy" allowfullscreen></iframe>
+    </div>
+  </div>
+
+  <!-- Client 4 -->
+
+  <div class="client-section">
+      <div class="client-avec-ligne">
+        <h4 class="client-title">Idéal TFC</h4>
+        <span class="ligne-verte-client"></span>
+      </div>
+    <div class="videos-row">
+      <iframe src="https://www.instagram.com/reel/DS8PsXOjTuA/embed" scrolling="no"> loading="lazy" allowfullscreen></iframe>
+      <iframe src="https://www.instagram.com/reel/DSvXpo4k2zc/embed" scrolling="no"> loading="lazy" allowfullscreen></iframe>
+      <iframe src="https://www.instagram.com/reel/DTJHi_1jD43/embed" scrolling="no"> loading="lazy" allowfullscreen></iframe>
+    </div>
+  </div>
+
+  <!-- Client 5 -->
+
+  <div class="client-section">
+      <div class="client-avec-ligne">
+        <h4 class="client-title">O’Derma</h4>
+        <span class="ligne-verte-client"></span>
+      </div>
+    <div class="videos-row">
+      <iframe src="https://www.instagram.com/reel/DRvE6OpicID/embed" scrolling="no"> loading="lazy" allowfullscreen></iframe>
+      <iframe src="https://www.instagram.com/reel/DRVP1FvE49d/embed" scrolling="no"> loading="lazy" allowfullscreen></iframe>
+      <iframe src="https://www.instagram.com/reel/DSTC7ttDQXp/embed" scrolling="no"> loading="lazy" allowfullscreen></iframe>
+    </div>
+  </div>
+
+</div>
+
   `,
     projet_autre_1: `
     <div class="container-popup-text">
