@@ -1040,6 +1040,7 @@ a:hover .icone-reseau {
 }
 
 .client-title {
+  font-size: 1.8rem;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.05em;
@@ -1380,5 +1381,11 @@ a:hover .icone-reseau {
   }
   footer p {
     font-size: 11px;
+  }
+}
+
+@media (max-width: 900px) {
+  .videos-row {
+    grid-template-columns: 1fr;
   }
 }
