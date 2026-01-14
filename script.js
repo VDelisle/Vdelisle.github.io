@@ -398,7 +398,7 @@ document.addEventListener("DOMContentLoaded", function () {
     <div class="info-projet">
       <p><span class="mini-titre">Date: </span>2025 - 2026</p>
       <p><span class="mini-titre">Rôle: </span>Monteur vidéo</p>
-      <p><span class="mini-titre">Clients: </span>O’Derma, Idéal TFC, MV Saguenay, Coach Gab, Duraclim</p>
+      <p><span class="mini-titre">Clients: </span>O’Derma, Idéal TFC, MV Saguenay, Coach Gab</p>
       <p><span class="mini-titre">Via: </span>LetMeTalk (freelance / pigiste)</p>
     </div>
   </div>
